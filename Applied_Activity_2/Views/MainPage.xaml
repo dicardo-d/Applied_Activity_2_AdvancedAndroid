@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:models="clr-namespace:Applied_Activity_2.Model"
+             xmlns:viewmodels="clr-namespace:Applied_Activity_2.ViewModels"
+             xmlns:toolkit="http://schemas.microsoft.com/dotnet/2022/maui/toolkit"
+             x:Class="Applied_Activity_2.Views.MainPage">
+
+
+
+
+    <ContentPage.BindingContext>
+        <viewmodels:HolidayListViewModel/>
+    </ContentPage.BindingContext>
+
+    <ContentPage.Behaviors>
+        <toolkit:EventToCommandBehavior
+                EventName="Appearing"
+                Command="{Binding PageAppearingCommand}" />
+    </ContentPage.Behaviors>
+       <Grid>
+
+
+        <StackLayout MaximumHeightRequest="15">
+           <Picker x:Name="picker" BackgroundColor="Red" 
+                Title="Select year">
+          <Picker.ItemsSource>
+            <x:Array Type="{x:Type x:String}">
+              <x:String>2019</x:String>
+              <x:String>2020</x:String>
+              <x:String>2021</x:String>
+              <x:String>2022</x:String>
+            </x:Array>
+          </Picker.ItemsSource>
+        </Picker>
+        </StackLayout >
+             <VerticalStackLayout Margin="25" >
+            <CollectionView  ItemsSource="{Binding Holiday}">
+                <CollectionView.ItemTemplate>
+                    <DataTemplate x:DataType="models:Holiday">
+                        <HorizontalStackLayout Padding="10">
+                            <VerticalStackLayout VerticalOptions="Center">
+                                <Label Text="{Binding NameEn}" FontSize="24" TextColor="Black" x:Name="NameEn"/>
+                                 <Label Text="{Binding Date}" FontSize="24" TextColor="Gray" x:Name="Date"/>
+                            </VerticalStackLayout>
+                        </HorizontalStackLayout>
+                    </DataTemplate>
+                </CollectionView.ItemTemplate>
+
+            </CollectionView>
+     </VerticalStackLayout>
+           </Grid>
+</ContentPage>

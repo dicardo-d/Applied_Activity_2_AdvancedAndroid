@@ -1,0 +1,35 @@
+﻿<Properties StartupConfiguration="{972189E5-6922-498B-8D34-2C08DDC5072F}|Default">
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.ItemProperties.Applied__Activity__2 PreferredExecutionTarget="MyAppleMacCatalystID" FirstBuild="True" />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Applied_Activity_2/AppShell.xaml.cs">
+    <Files>
+      <File FileName="Applied_Activity_2/MainPage.xaml.cs" Line="1" Column="1" />
+      <File FileName="Applied_Activity_2/MainPage.xaml" Line="1" Column="1" />
+      <File FileName="Applied_Activity_2/MauiProgram.cs" Line="12" Column="29" />
+      <File FileName="../../.nuget/packages/communitytoolkit.maui.markup/1.2.1/readme.txt" Line="1" Column="1" />
+      <File FileName="../../.nuget/packages/communitytoolkit.maui.core/1.4.0/readme.txt" Line="1" Column="1" />
+      <File FileName="../../.nuget/packages/communitytoolkit.maui/1.4.0/readme.txt" Line="22" Column="1" />
+      <File FileName="Applied_Activity_2/AppShell.xaml.cs" Line="1" Column="1" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="Applied_Activity_2" expanded="True">
+            <Node name="Applied_Activity_2" expanded="True">
+              <Node name="Models" expanded="True" />
+              <Node name="ViewModels" expanded="True" />
+              <Node name="Views" expanded="True" />
+              <Node name="AppShell.xaml" selected="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <Xamarin.Addins.Core.Project ActiveDebugTarget="MyAppleMacCatalystID" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>
